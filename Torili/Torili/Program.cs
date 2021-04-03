@@ -10,9 +10,9 @@ namespace Torili
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Eingabe bitte:");
-            String eingabe1 = Console.ReadLine();
-            double x = Convert.ToDouble(eingabe1);
+            //Console.WriteLine("Eingabe bitte:");
+            //String eingabe1 = Console.ReadLine();
+            //double x = Convert.ToDouble(eingabe1);
 
             //Torili torili = new Torili();
             //torili.Ye();
@@ -22,10 +22,20 @@ namespace Torili
             double y = Convert.ToDouble(eingabe2);
 
             Olili olili = new Olili();
-            olili.Yos(x, y);
+            olili.Yos(y);
 
+            Console.WriteLine("3 + " + y + " = ");
             Console.WriteLine(olili.Ergebnis1);
 
+            Console.WriteLine("Eingabe bitte:");
+            String eingabe3 = Console.ReadLine();
+            double z = Convert.ToDouble(eingabe3);
+
+            Jodyli jodyli = new Jodyli();
+            jodyli.Yeet(z);
+
+            Console.WriteLine("3 * " + z + " = "); 
+            Console.WriteLine(jodyli.Ergebnis2);
 
             Console.ReadKey();
         }
@@ -33,7 +43,7 @@ namespace Torili
 
     public class Torili
     {
-        double x;
+        double x = 3;
 
         //public void Ye(double _x)
         //{ 
@@ -45,15 +55,13 @@ namespace Torili
      
     public class Olili : Torili
     {
-        double x;
         double y;
         double ergebnis1;
 
-        public void Yos(double _x, double _y)
+        public void Yos(double _y)
         {
-            x = _x;
             y = _y;
-            ergebnis1 = x + y;
+            ergebnis1 = X + y;
         }
 
 
@@ -68,8 +76,8 @@ namespace Torili
 
         public void Yeet(double _z)
         {
-            Z1 = _z;
-            Ergebnis2 = X + z;
+            z = _z;
+            ergebnis2 = X * z;
         }
 
         public double Z1 { get => z; set => z = value; }
