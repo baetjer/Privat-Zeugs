@@ -22,7 +22,7 @@ namespace Torili
             double y = Convert.ToDouble(eingabe2);
 
             Olili olili = new Olili();
-            olili.Yos(y);
+            olili.Yos(x, y);
 
             Console.WriteLine(olili.Ergebnis1);
 
@@ -45,14 +45,17 @@ namespace Torili
      
     public class Olili : Torili
     {
+        double x;
         double y;
         double ergebnis1;
 
-        public void Yos(double _y)
+        public void Yos(double _x, double _y)
         {
+            x = _x;
             y = _y;
-            ergebnis1 = X + y;
+            ergebnis1 = x + y;
         }
+
 
         public double Y { get => y; set => y = value; }
         public double Ergebnis1 { get => ergebnis1; set => ergebnis1 = value; }
