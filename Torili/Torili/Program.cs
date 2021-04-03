@@ -14,8 +14,8 @@ namespace Torili
             String eingabe1 = Console.ReadLine();
             double x = Convert.ToDouble(eingabe1);
 
-            Torili torili = new Torili();
-            torili.Ye(x);
+            //Torili torili = new Torili();
+            //torili.Ye();
 
             Console.WriteLine("Eingabe bitte:");
             String eingabe2 = Console.ReadLine();
@@ -35,10 +35,10 @@ namespace Torili
     {
         double x;
 
-        public void Ye(double _x)
-        { 
-            x = _x;
-        }
+        //public void Ye(double _x)
+        //{ 
+        //    x = _x;
+        //}
 
         public double X { get => x; set => x = value; }
     }
