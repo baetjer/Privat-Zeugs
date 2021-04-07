@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Torili
+namespace Vererbung
 {
     class Program
     {
@@ -14,34 +14,34 @@ namespace Torili
             //String eingabe1 = Console.ReadLine();
             //double x = Convert.ToDouble(eingabe1);
 
-            //Torili torili = new Torili();
-            //torili.Ye();
+            //Klasse1 Klasse1 = new Klasse1();
+            //Klasse1.Ye();
 
             Console.WriteLine("Eingabe bitte:");
             String eingabe2 = Console.ReadLine();
             double y = Convert.ToDouble(eingabe2);
 
-            Olili olili = new Olili();
-            olili.Yos(y);
+            Klasse2 Klasse2 = new Klasse2();
+            Klasse2.Yos(y);
 
             Console.WriteLine("3 + " + y + " = ");
-            Console.WriteLine(olili.Ergebnis1);
+            Console.WriteLine(Klasse2.Ergebnis1);
 
             Console.WriteLine("Eingabe bitte:");
             String eingabe3 = Console.ReadLine();
             double z = Convert.ToDouble(eingabe3);
 
-            Jodyli jodyli = new Jodyli();
-            jodyli.Yeet(z);
+            Klasse3 Klasse3 = new Klasse3();
+            Klasse3.Yeet(z);
 
             Console.WriteLine("3 * " + z + " = "); 
-            Console.WriteLine(jodyli.Ergebnis2);
+            Console.WriteLine(Klasse3.Ergebnis2);
 
             Console.ReadKey();
         }
     }
 
-    public class Torili
+    public class Klasse1
     {
         double x = 3;
 
@@ -53,7 +53,7 @@ namespace Torili
         public double X { get => x; set => x = value; }
     }
      
-    public class Olili : Torili
+    public class Klasse2 : Klasse1
     {
         double y;
         double ergebnis1;
@@ -69,7 +69,7 @@ namespace Torili
         public double Ergebnis1 { get => ergebnis1; set => ergebnis1 = value; }
     }
 
-    public class Jodyli : Torili
+    public class Klasse3 : Klasse1
     {
         double z;
         double ergebnis2;
