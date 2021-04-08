@@ -10,7 +10,6 @@ namespace Vererbung
     {
         //String[] liste = new String[2];
         int zahl1;
-
         string[] liste = new string[2] {"Innensechskant", "Sechskant"};
 
         //public void Array_Liste(string[] _liste)
@@ -33,5 +32,6 @@ namespace Vererbung
         {
             return liste[i];
         }
+
     }
 }
