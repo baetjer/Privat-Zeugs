@@ -16,14 +16,16 @@ namespace Vererbung
 
             //Klasse1 Klasse1 = new Klasse1();
             //Klasse1.Ye();
+            Console.WriteLine("Bitte wählen Sie aus:");
+
             Klasse4 klasse4 = new Klasse4();
             klasse4.Array();
-
-            String input = Convert.ToString(Console.ReadLine());
-
-
-
             
+            
+            int input = Convert.ToInt32(Console.ReadLine());
+            string output = klasse4.getElement(input);
+
+            Console.WriteLine("Sie haben sich für {0} entschieden", output);
 
             Console.WriteLine("Eingabe bitte:");
             String eingabe2 = Console.ReadLine();
