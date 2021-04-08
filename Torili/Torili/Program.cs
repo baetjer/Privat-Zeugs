@@ -16,26 +16,34 @@ namespace Vererbung
 
             //Klasse1 Klasse1 = new Klasse1();
             //Klasse1.Ye();
+            Klasse4 klasse4 = new Klasse4();
+            klasse4.Array();
+
+            String input = Convert.ToString(Console.ReadLine());
+
+
+
+            
 
             Console.WriteLine("Eingabe bitte:");
             String eingabe2 = Console.ReadLine();
             double y = Convert.ToDouble(eingabe2);
 
-            Klasse2 Klasse2 = new Klasse2();
-            Klasse2.Yos(y);
+            Klasse2 klasse2 = new Klasse2();
+            klasse2.Yos(y);
 
             Console.WriteLine("3 + " + y + " = ");
-            Console.WriteLine(Klasse2.Ergebnis1);
+            Console.WriteLine(klasse2.Ergebnis1);
 
             Console.WriteLine("Eingabe bitte:");
             String eingabe3 = Console.ReadLine();
             double z = Convert.ToDouble(eingabe3);
 
-            Klasse3 Klasse3 = new Klasse3();
-            Klasse3.Yeet(z);
+            Klasse3 klasse3 = new Klasse3();
+            klasse3.Yeet(z);
 
             Console.WriteLine("3 * " + z + " = "); 
-            Console.WriteLine(Klasse3.Ergebnis2);
+            Console.WriteLine(klasse3.Ergebnis2);
 
             Console.ReadKey();
         }
