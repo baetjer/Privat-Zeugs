@@ -21,6 +21,8 @@ namespace Vererbung
 
         public void Array()
         {
+            Console.WriteLine("Bitte wählen Sie aus:");
+
             foreach (string i in liste)
             {
                 Console.WriteLine(zahl1 + " " + i);
@@ -31,6 +33,20 @@ namespace Vererbung
         public string getElement(int i)
         {
             return liste[i];
+        }
+
+        public void Array_Ausgabe()
+        {
+            int input = Convert.ToInt32(Console.ReadLine());
+
+            while ((input != 0) && (input != 1))
+            {
+                Console.WriteLine("Falsche Eingabe, bitte wählen Sie nochmal.");
+                input = Convert.ToInt32(Console.ReadLine());
+            }
+
+            string output = getElement(input);
+            Console.WriteLine("Sie haben sich für {0} entschieden", output);
         }
 
     }
