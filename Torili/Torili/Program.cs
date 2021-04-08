@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Vererbung
+namespace Torili
 {
     class Program
     {
@@ -30,6 +30,16 @@ namespace Vererbung
 
             Console.WriteLine("3 + " + y + " = ");
             Console.WriteLine(klasse2.Ergebnis1);
+
+            Console.WriteLine("Ihre Auswahl lautet:");
+            klasse4.Array_Warenkorb();
+            Console.WriteLine("Auswahl bestätigen?");
+
+            Klasse5 klasse5 = new Klasse5();
+            klasse5.Entscheidung();
+            klasse5.Entscheidung_Ausgabe();
+
+            Console.WriteLine();
 
             Console.WriteLine("Eingabe bitte:");
             String eingabe3 = Console.ReadLine();
