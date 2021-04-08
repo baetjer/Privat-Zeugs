@@ -4,20 +4,13 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Vererbung
+namespace Torili
 {
     public class Klasse4
     {
-        //String[] liste = new String[2];
+        int input = 0;
         int zahl1;
         private string[] liste = new string[2] {"Innensechskant", "Sechskant"};
-
-        //public void Array_Liste(string[] _liste)
-        //{
-        //    liste = _liste;
-        //}
-
-        //public string[] Liste { get => liste; set => liste = value; }
 
         public void Array()
         {
@@ -49,5 +42,10 @@ namespace Vererbung
             Console.WriteLine("Sie haben sich für {0} entschieden", output);
         }
 
+        public void Array_Warenkorb()
+        {
+            string output = getElement(input);
+            Console.WriteLine(output);
+        }
     }
 }
